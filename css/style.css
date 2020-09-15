@@ -24,7 +24,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(255, 235, 120, 0.8), rgba(255, 127, 5, 0.8)), url(../img/food-indo.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   position: relative; }
 
 .logo-box {
@@ -50,4 +50,10 @@ body {
   display: block;
   font-size: 20px;
   font-weight: 200;
-  letter-spacing: 35px; }
+  letter-spacing: 5px; }
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
