@@ -30,10 +30,41 @@ body{
   height: 95vh;
   background-image: linear-gradient(
                   to right bottom ,
-                  rgba(126, 213, 111, .7),
-                  rgba(40, 180, 131, .7)),
+                  rgba(255, 235, 120, .8),
+                  rgba(255, 127, 5, .8)),
                   url(../img/food-indo.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%); // (upper left xy, upper right yx, bottom right xy, bottom left)
+  position: relative;
+}
+
+.logo-box{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+}
+
+.heading-primary{
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main{
+  display: block;
+  font-size: 60px;
+  font-weight: 200;
+  letter-spacing: 35px;
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 35px;
 }
