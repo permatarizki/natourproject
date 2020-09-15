@@ -48,11 +48,17 @@ body{
 .logo{
   height: 100px;
   width: 100px;
+
+  &:hover{
+    animation:  ease-out;
+  }
 }
 
 .heading-primary{
   color:#fff;
   text-transform: uppercase;
+
+  margin-bottom: 60px;
 }
 
 .heading-primary-main{
@@ -60,6 +66,10 @@ body{
   font-size: 60px;
   font-weight: 200;
   letter-spacing: 35px;
+
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }
 
 .heading-primary-sub{
@@ -67,6 +77,9 @@ body{
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 5px;
+
+  animation-name: moveInRight;
+  animation-duration: 2s;
 }
 
 .text-box{
@@ -74,4 +87,53 @@ body{
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@keyframes moveInLeft {
+   0%{
+     opacity: 0;
+     transform: translateX(-100px);
+   }
+
+   80%{
+     transform: translateX(20px);
+   }
+
+   100%{
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80%{
+    transform: translateX(-20px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn:link,
+.btn:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+}
+.btn:hover{
+  transform: translateY(-3px);
+}
+.btn-white{
+  background-color: #fff;
+  color: #777;
+
 }
